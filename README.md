@@ -1,6 +1,6 @@
 # semantics-and-accessibility
 
-Programa Explorer Rocketseat: Intermet
+Programa Explorer Rocketseat:
 
 Objetivo: Refatoração com semântica e acessibilidade
 

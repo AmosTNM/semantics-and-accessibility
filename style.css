@@ -1,117 +1,144 @@
+/*================BODY================*/
 body {
   margin: 0;
-
-  font-family: "Open Sans", sans-serif;
-
-  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
-
   min-height: 100vh;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  font-family: "Open Sans", sans-serif;
 }
 
-.page {
+/*================PAGE================*/
+#page {
   width: 1000px;
   margin: 0 auto;
   padding-top: 65px;
 }
 
-.nav {
+/*================NAV=================*/
+nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  margin-bottom: 55px;
+  width: 1006px;
+
+  margin: 0 auto 55px;
 }
 
-.list {
+nav .logo {
+  cursor: pointer;
+}
+
+nav ul {
   display: flex;
+  align-items: center;
   gap: 48px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-a {
-  color: #1f1534;
+nav ul li a {
+  font-size: 18px;
+  line-height: 23px;
+
+  font-family: 'Mulish', sans-serif;
+  color: #1F1534;
+  opacity: 0.5;
   text-decoration: none;
 }
 
-.list .item a {
-    opacity: 0.5;
-}
-
-.list .item a:hover {
+nav ul li a:hover {
   font-weight: bold;
   opacity: 1;
 }
 
-.list,
-.title {
-  font-family: "Mulish", sans-serif;
-}
-
-.main {
+/*================MAIN================*/
+main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  margin: auto;
+
+  width: 1008px;
 }
 
-.title {
+main section h1 {
   font-size: 49px;
   line-height: 56px;
-  color: #1f1534;
 
+  font-family: 'Mulish', sans-serif;
   font-weight: normal;
+  color: #1F1534;
 
   width: 490px;
 }
 
-.title span {
-  color: #89c5cc;
+main section h1 span {
   font-weight: bold;
+  color: #89C5CC;
 }
 
-.subtitle {
+main section p {
   font-size: 14px;
   line-height: 28px;
-  color: #7d7987;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #7D7987;
 
   margin: 40px 0;
 }
 
-.button {
-  color: white;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+main section button {
+  font-size: 16px;
+  line-height: 22px;
 
-  background: #69B99D;
-  border: 0;
-  padding: 14px 32px 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F9F9F9;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 
+  padding: 14px 32px 15px;
+  gap: 10px;
   border-radius: 4px;
+  border: none;
+  background: #69B99D;
 
   cursor: pointer;
+
 }
 
-.footer {
+main section button:hover {
+  background: #3e8b71;
+}
+
+/*================FOOTER===============*/
+footer {
   font-size: 14px;
   line-height: 28px;
 
+  font-family: 'Open Sans', sans-serif;
+
+  color: #000000;
+
   text-align: center;
 
-  margin-top: 80px;
+  margin: 80px;
 }
 
-.footer a {
+footer a {
+  text-decoration: none;
   font-weight: bold;
+  color: #000000;
 }
 
+/*================BALLS================*/
 #balls {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
